@@ -11,7 +11,8 @@ Node.js command line tool to fetch Klout score and topics
 ```
 $> node GetKloutInfo
 ```
-5. Sample output
+
+###Sample output
 ```
 harishvc Klout Score (full):  36.59858883463818
 harishvc Klout Score (rounded):  36.6
