@@ -3,18 +3,21 @@ GetTweet
 
 Php command line tool to fetch tweet in JSON format
   
-### Usage ### 
+### Usage 
 1. Join Twitter Developer
-2. Replace ```something```` with valid Twitter credentials
+2. Replace ```something``` with valid Twitter credentials
+
 ````
 $oauth_access_token = "something";
 $consumer_key = "something";
 $consumer_secret = "something";
 $oauth_access_token_secret = "something";
 ````
+
 3. Run on command line
+
 ````
-$> php GetTweetAsJson.php #tweetID#
+$> php GetTweet.php #tweetID#
 ````
 
 ### Credit ###

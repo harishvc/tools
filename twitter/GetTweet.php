@@ -9,7 +9,7 @@ $consumer_secret = "something";
 $oauth_access_token_secret = "something";
 
 if($argc != 2)  {
-  echo "Usage: php GetTweetAsJson.php #tweetID# \n";
+  echo "Usage: php GetTweet.php #tweetID# \n";
   die();
 }
 
