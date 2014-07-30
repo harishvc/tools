@@ -27,7 +27,7 @@ print "Company: %s" % (user.company)
 print "Joined on: %s" % (moment.date(user.created_at).format("MMMM DD YYYY"))
 print "Last seen on: %s" % (moment.date(user.updated_at).format("MMMM DD YYYY, HH:mm:ss"))
 
-##### PUBLIC REPOSIORY INFORMATION
+##### PUBLIC REPOSIIORY INFORMATION
 print "Found ", len(list(user.get_repos())), " repositories for user " , (USER)
 print "%-40s %-10s %-10s %-40s" % ("Name", "Private", "Fork", "URL")
 for repo in user.get_repos():
