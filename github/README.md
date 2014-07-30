@@ -6,7 +6,8 @@ Command line tool to get basic information about user and repositories
 ### Usage 
 1. Non-Authenticated user
 2. Authenticated user
-   Edit  GithubUserInfo to enter login and password. Comment our lines following "Non-Authenticated user"
+   Edit  GithubUserInfo to enter login and password. Comment our lines following "Non-Authenticated user" . As
+   an authenticated user you will see more information.
 3. Run script
 ```
 $> python GithubUserInfo
