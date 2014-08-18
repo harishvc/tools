@@ -85,7 +85,7 @@ def main():
                 result_row = []
                 for field in row['f']:
                     result_row.append(field['v'])
-                    print('\t'.join(map(str,result_row)))
+		print('\t'.join(map(str,result_row)))
         else:
             print "Ignore: jobComplete=%s \t totalRows=%s \t totalBytesProcessed=%s" % (query_response['jobComplete'],query_response['totalRows'], query_response['totalBytesProcessed'])
 
