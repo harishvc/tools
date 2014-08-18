@@ -75,7 +75,7 @@ def main():
         query_response = query_request.query(projectId=PROJECT_NUMBER,body=query_data).execute()
         
         #Did the bigquery get processed?
-        if ((query_response['jobComplete']) and (query_response['totalRows'] >1) and (query_response['totalBytesProcessed'] > 0 )):
+        if ((query_response['jobComplete']) and (int(query_response['totalRows']) >1) and (int(query_response['totalBytesProcessed']) > 0 )):
             #Store result for further analysis
             with open( 'toprepositories.json', 'w' ) as outfile:
                 json.dump( query_response,outfile)
