@@ -38,5 +38,5 @@ How can I test bash shell for "Shellshock" vulnerability?
 
 
 ###Resources
-[GitHub Markdown Viewer](http://notepag.es/)
-[Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+1. [GitHub Markdown Viewer](http://notepag.es/)
+2. [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
