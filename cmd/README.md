@@ -18,18 +18,18 @@ Generate a sorted list of unique email addresses from a text file with email add
 ###Question 2
 How can I test bash shell for "Shellshock" vulnerability?
 
-    $> export mytest='() { cat ~/.bash_history ; }'   #create env variable with function definition!
-    $> bash -c 'mytest'                               #run the command mytest
+    #Source: http://arstechnica.com/security/2014/09/bug-in-bash-shell-creates-big-security-hole-on-anything-with-nix-in-it/
+    $>env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
 
     #Affected
-    cd ..           #lines from ~/.bash_history    
-    mkdir abcd      #lines from ~/.bash_history
+    vulnerable
+    this is a test
    
     #Not affected
-    #Source: http://arstechnica.com/security/2014/09/bug-in-bash-shell-creates-big-security-hole-on-anything-with-nix-in-it/
     #Resource: http://unix.stackexchange.com/questions/157329/what-does-env-x-something-bash-c-command-do-and-why-is-it-insecure
     bash: warning: x: ignoring function definition attempt
     bash: error importing function definition for `x'
+    this is a test
 
 
 ###Resources
