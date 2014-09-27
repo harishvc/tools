@@ -31,6 +31,12 @@ How can I test bash shell for "Shellshock" vulnerability?
     bash: error importing function definition for `x'
     this is a test
 
+###Question 3
+How long does it take for a webpage to respond?
+
+    #Total time in seconds
+    $>curl -o /dev/null -s -w  %{time_total}\\n  http://google.com
+    0.093
 
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
