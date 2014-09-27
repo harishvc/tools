@@ -34,7 +34,7 @@ How can I test bash shell for "Shellshock" vulnerability?
 ###Question 3
 How long does it take for a webpage to respond?
 
-    #Total time in seconds
+    #Total time in seconds for google.com to respond
     $>curl -o /dev/null -s -w  %{time_total}\\n  http://google.com
     0.093
 
