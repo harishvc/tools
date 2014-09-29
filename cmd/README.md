@@ -14,8 +14,26 @@ Generate a sorted list of unique email addresses from a text file with email add
     bcd@t.org
     efgh@b.com
 
-
 ###Question 2
+How can I split a text file with few thousand email addresses into smaller files?
+   
+    $>cat all-emails.txt 
+    1@a.com
+    2@a.com
+    3@a.com
+    4@a.com
+    5@a.com
+    6@a.com
+    #Split all-emails.txt into files beginning with the name small-email.txt containing 2 lines of text
+    $>cat all-emails.txt | split  -l 2  - small-email.txt
+    $>less small-email.txtaa    
+    1@a.com
+    2@a.com
+    $>less small-email.txtab
+    3@a.com
+    4@a.com
+ 
+###Question 3
 How can I test bash shell for "Shellshock" vulnerability?
 
     #Source: http://arstechnica.com/security/2014/09/bug-in-bash-shell-creates-big-security-hole-on-anything-with-nix-in-it/
@@ -31,7 +49,7 @@ How can I test bash shell for "Shellshock" vulnerability?
     bash: error importing function definition for `x'
     this is a test
 
-###Question 3
+###Question 4
 How long does it take for a webpage to respond?
 
     #Total time in seconds for google.com to respond
