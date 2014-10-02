@@ -56,6 +56,14 @@ How long does it take for a webpage to respond?
     $>curl -o /dev/null -s -w  %{time_total}\\n  http://google.com
     0.093
 
+###Question 5
+Parse email address into generate custom output in CSV format
+
+    $>cat test.txt
+    harish.chakravarthy@aboutme.com
+    $>cat test.txt | awk '{split($0,a,"@"); print a[1]}' | awk '{split($0,b,".");  print b[1],"\t",$0"@aboutme.com","\t","about.me/"$0}' | sed 's/^./\U&\E/'
+    Harish  harish.chakravarthy@aboutme.com   about.me/harish.chakravarthy
+
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
 2. [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
