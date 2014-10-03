@@ -47,3 +47,5 @@ harishvc/twitter-harvest                 False      True       https://github.co
 harishvc/twitter-stream-analytics        False      False      https://github.com/harishvc/twitter-stream-analytics
 harishvc/wip                             False      False      https://github.com/harishvc/wip
 ```
+
+[![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/readme)](https://github.com/igrigorik/ga-beacon)

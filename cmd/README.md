@@ -67,3 +67,5 @@ Parse email address into generate custom output in CSV format
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
 2. [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+
+[![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/readme)](https://github.com/igrigorik/ga-beacon)
