@@ -27,4 +27,4 @@ https://github.com/dboudro/AnimateSVGText	None	26
 https://gist.github.com/harishvc/db922d8d1c4273f8f395
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/readme)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/bigquery-github/readme)](https://github.com/igrigorik/ga-beacon)

@@ -18,4 +18,4 @@ harishvc Klout Score (full):  36.59858883463818
 harishvc Klout Score (rounded):  36.6
 harishvc Topics of interest:  Running,Food,Travel,Wine Tasting,Movies
 ```
-[![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/readme)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/klout/readme)](https://github.com/igrigorik/ga-beacon)
