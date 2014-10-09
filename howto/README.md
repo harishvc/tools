@@ -3,17 +3,7 @@ HOWTO
 
 ###Question 1
 Howto embed a YouTube clip with autoplay, full screen and no related videos on a webpage?
-    
-   $>cat index.html
-   <!-- YouTube options -->
-   <!-- https://developers.google.com/youtube/player_parameters -->
-    <iframe width=100% height=100% src="//www.youtube.com/embed/##something##
-       ?autoplay=1&cc_load_policy=1&rel=0&showinfo=0" 
-       frameborder="0" allowfullscreen>
-    </iframe>
-
-
-
+	[YouTube Gist] (https://gist.github.com/harishvc/14718d68ddd424d54c73)
 
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
