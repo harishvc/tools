@@ -2,7 +2,7 @@ HOWTO
 =====
 
 ###Question 1
-How to embed a YouTube clip with autoplay, full screen and no related videos on a webpage
+Howto embed a YouTube clip with autoplay, full screen and no related videos on a webpage?
     
    $>cat index.html
    <!-- YouTube options -->
