@@ -9,6 +9,7 @@ Howto embed a YouTube clip with autoplay, full screen and no related videos on a
 How to flip mp4 around using command line?
 
     #Reference: http://stackoverflow.com/questions/3937387/rotating-videos-with-ffmpeg# 
+    $> ffmpeg -m   #Is ffmpeg installed?
     $> ffmpeg -i name.mp4   -vf "transpose=2,transpose=2" newname.mp4
 
 
