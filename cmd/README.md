@@ -64,6 +64,13 @@ Parse email address into generate custom output in CSV format
     $>cat test.txt | awk '{split($0,a,"@"); print a[1]}' | awk '{split($0,b,".");  print b[1],"\t",$0"@aboutme.com","\t","about.me/"$0}' | sed 's/^./\U&\E/'
     Harish  harish.chakravarthy@aboutme.com   about.me/harish.chakravarthy
 
+###Question 6
+How to generate timestamp year-month-year hours:minutes:seconds (example: 2014-10-23 21:43:48)
+
+	#!/bin/bash
+	mydate=`date '+%Y-%m-%d %H:%M:%S'`
+	echo $mydate
+
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
 2. [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
