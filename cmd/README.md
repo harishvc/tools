@@ -74,5 +74,6 @@ How to generate timestamp year-month-year hours:minutes:seconds (example: 2014-1
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
 2. [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+3. [GitHub emoji] (http://www.emoji-cheat-sheet.com/)
 
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
