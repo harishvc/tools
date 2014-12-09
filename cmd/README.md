@@ -71,6 +71,12 @@ How to generate timestamp year-month-year hours:minutes:seconds (example: 2014-1
 	mydate=`date '+%Y-%m-%d %H:%M:%S'`
 	echo $mydate
 
+###Question 7
+How to replace all occurrence of a word in a file?
+
+	$>find -type f -name filename.conf | xargs sed -i "s/old/new/g"
+        
+
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
 2. [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
