@@ -1,5 +1,16 @@
 Unix Command Line Tools
 =======================
+##Table of Contents
+  * [Unix Command Line Tools](#unix-command-line-tools)
+      * [Q1: Generate a sorted list of unique email addresses from a text file with email address seperated by comma.](#q1-generate-a-sorted-list-of-unique-email-addresses-from-a-text-file-with-email-address-seperated-by-comma)
+      * [Q2: How can I split a text file with few thousand email addresses into smaller files?](#q2-how-can-i-split-a-text-file-with-few-thousand-email-addresses-into-smaller-files)
+      * [Q3: How can I test bash shell for "Shellshock" vulnerability?](#q3-how-can-i-test-bash-shell-for-shellshock-vulnerability)
+      * [Q4: How long does it take for a webpage to respond?](#q4-how-long-does-it-take-for-a-webpage-to-respond)
+      * [Q5: Parse email address into generate custom output in CSV format](#q5-parse-email-address-into-generate-custom-output-in-csv-format)
+      * [Q6: How to generate timestamp year-month-year hours:minutes:seconds (example: 2014-10-23 21:43:48)](#q6-how-to-generate-timestamp-year-month-year-hoursminutesseconds-example-2014-10-23-214348)
+      * [Q7: How to replace all occurrence of a word in a file?](#q7-how-to-replace-all-occurrence-of-a-word-in-a-file)
+      * [Resources](#resources)
+
 
 ###Q1: Generate a sorted list of unique email addresses from a text file with email address seperated by comma.
 
