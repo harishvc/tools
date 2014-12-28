@@ -1,5 +1,10 @@
 #Solving problems using Python 
 
+##Table of Contents
+  * [Solving problems using Python](#solving-problems-using-python)
+    * [Q1: Join elements in an array](#q1-join-elements-in-an-array)
+    * [Q2: Print n elements in a string](#q2-print-n-elements-in-a-string)
+
 ##Q1: Join elements in an array
     a1 = ['this','is','a','sentence']      
     a2 = '### '.join(a1)      
