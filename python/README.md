@@ -3,8 +3,9 @@
 ##Table of Contents
   * [Solving problems using Python](#solving-problems-using-python)
     * [Q1: Join elements in an array](#q1-join-elements-in-an-array)
-    * [Q1: Join elements in an array](#q1-join-elements-in-an-array)
-    * [Q2: Print n elements in a string](#q2-print-n-elements-in-a-string)
+    * [Q2: Pop elements in an array](#q2-pop-elements-in-an-array)
+    * [Q3: Print n elements in a string](#q3-print-n-elements-in-a-string)
+
 
 ##Q1: Join elements in an array
     a1 = ['this','is','a','sentence']      
