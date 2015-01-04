@@ -23,5 +23,9 @@
     #print 5 characters starting from position 0
     print a1[0:5] #Hello  
 
-
+##Q4: How can you get more information about python modules?
+    $>pip freeze   #list all python modules and their version
+    $>pip freeze > requirements.txt #generate requirements file
+    $>pip show py2neo  #show information about py2neo; output includes version #
+    $>
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
