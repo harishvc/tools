@@ -28,5 +28,10 @@
     $>pip freeze > requirements.txt #generate requirements file
     $>pip show py2neo  #show information about py2neo; output includes version #
     
+##Q5: String concatenation
+    $>a = "Hello"
+    $>b = "World"
+    $>c = a + " " + b     
+    $>print c  #Hello World
 
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
