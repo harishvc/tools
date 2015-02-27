@@ -45,8 +45,8 @@ if (b >1):
 else:
 	a = 0
 
-##Q7:Time now in epoch milliseconds
+##Q7: Time now in epoch milliseconds
     import datetime
-    print datetime.datetime.now().strftime("%s")) * 1000
+    print int(datetime.datetime.now().strftime("%s")) * 1000    
 
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
