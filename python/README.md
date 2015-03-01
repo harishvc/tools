@@ -9,6 +9,7 @@
     * [Q5: String concatenation](#q5-string-concatenation)
     * [Q6: One line if else statement](#q6-one-line-if-else-statement)
     * [Q7: Time now is epoch milliseconds](#q7-time-now-in-epoch-milliseconds)
+    * [Q8: Find if substring exists in a string](#q8-find-if-substring-exists-in-a-string)
 
 ##Q1: Join elements in an array
     a1 = ['this','is','a','sentence']      
@@ -48,5 +49,11 @@ else:
 ##Q7: Time now in epoch milliseconds
     import datetime
     print int(datetime.datetime.now().strftime("%s")) * 1000    
+
+##Q8: Find if substring exists in a string
+   a = "Hello world" #string
+   b = "world"       #sub-string
+   if b in a:
+	print "found"
 
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
