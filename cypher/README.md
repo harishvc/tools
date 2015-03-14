@@ -11,8 +11,10 @@
     * [Q7: Time now is epoch milliseconds](#q7-time-now-in-epoch-milliseconds)
     * [Q8: Find if substring exists in a string](#q8-find-if-substring-exists-in-a-string)
 
-##Q1: get schemea
+##Q1: What is the schemea
 $>:schema
 
+##Q2: Delete all nodes and relations
+$> MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r;
 
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
