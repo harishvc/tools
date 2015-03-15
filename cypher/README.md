@@ -11,4 +11,7 @@ $>:schema
 ##Q2: Delete all nodes and relations
 $> MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r;
 
+##Q3: Find nodes that don't have any relationship
+$> start n=node(*) match n-[r?]-() where r is null return n
+
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
