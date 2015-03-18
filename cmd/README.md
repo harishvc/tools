@@ -81,6 +81,10 @@ Unix Command Line Tools
 	$>find -type f -name filename.conf | xargs sed -i "s/old/new/g"
         
 
+###Q8: How much space is my folder taking up?
+
+        $> du -sk * | sort -rn     #sort by kily bytes in descending order
+
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
 2. [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
