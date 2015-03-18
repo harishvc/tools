@@ -83,7 +83,7 @@ Unix Command Line Tools
 
 ###Q8: How much space is my folder taking up?
 
-        $> du -sk * | sort -rn     #sort by kily bytes in descending order
+        $> du -sk * | sort -rn     #sort by kilo bytes in descending order
 
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
