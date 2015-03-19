@@ -51,12 +51,13 @@ else:
     print int(datetime.datetime.now().strftime("%s")) * 1000    
 
 ##Q8: Find if substring exists in a string
-   a = "Hello world" #string
-   b = "world"       #sub-string
-   if b in a:
+    a = "Hello world" #string
+    b = "world"       #sub-string
+    if b in a:
 	print "found"
 
 ##Q9: What is the data type?
+
    a = []
    print type(a)
    b = {}
