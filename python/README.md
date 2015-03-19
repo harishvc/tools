@@ -57,11 +57,10 @@ else:
 	print "found"
 
 ##Q9: What is the data type?
-
-   a = []
-   print type(a)
-   b = {}
-   print type(b)
+    a = []
+    print type(a)
+    b = {}
+    print type(b)
 
 
 
