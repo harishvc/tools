@@ -56,4 +56,12 @@ else:
    if b in a:
 	print "found"
 
+##Q9: What is the data type?
+   a = []
+   print type(a)
+   b = {}
+   print type(b)
+
+
+
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
