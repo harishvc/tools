@@ -40,24 +40,24 @@ def topics(title, body):
 #http://github.com/llvm-project/llvm-project/commit/b439b3f7f51f578fde11983ad2a151e1a21ae5cb
 #http://github.com/llvm-project/llvm-project/commit/f612473f836fe7a422729ff4815ac906550853f6
 s = """Enable one of the tests for GCC. Summary: The "internal" name of vars is different between clang and GCC. All this change does is to 
-       use a regex instead of the hardcoded internal name. Test Plan: dotest.py -C -p TestMiVar Reviewers: ki.stfu Reviewed By: ki.stfu 
-       Subscribers: lldb-commits Differential Revision: http://reviews.llvm.org/D9128 Make getModRefInfo(Instruction *) not crash on certain 
-       types of instructions Use a range loop. NFC.  Use dl_iterate_phdr on Android. It's available on Android/ARM starting with API 21 (L).
-       remove RCPPS and RSQRTPS intrinsic instruction definitions We don't need codegen-only intrinsic instructions for the vector forms of 
-       these instructions. This makes the reciprocal estimate instruction lowering identical to how we handle normal square roots: 
-       (V)SQRTPS / (V)SQRTPD. No existing regression tests fail with this patch. Differential Revision: http://reviews.llvm.org/D9301
-       Implemented ASTImporter support for Stmts and fixed some bugs in the ASTImporter that this exposed: - When importing functions, the body 
-       (if any) was previously ignored. This patch ensures that the body is imported also. - When a function-local Decl is imported, the first 
-       thing the ASTImporter does is import its context (via ImportDeclParts()). This can trigger importing the Decl again as part of the body of 
-       the function (but only once, since the function's Decl has been added to ImportedDecls). This patch fixes that problem by extending 
-       ImportDeclParts() to return the imported Decl if it was imported as part of importing its context, and the patch adds 
-       ASTImporter::GetAlreadyImportedOrNull() to support this query. All callers of ImportDeclParts return the imported version of 
-       the Decl if ImportDeclParts() returns it. - When creating functions, InnerLocStart of the source function was re-used without importing. 
-       This is a straight up bug, and this patch makes ASTImporter import the InnerLocStart and use the imported version. - 
-       When importing FileIDs, the ASTImporter previously always tried to re-load the file for the corresponding CacheEntry from disk. 
-       This doesn't work if the CacheEntry corresponds to a named memory buffer. This patch changes the code so that if the UniqueID for 
-       the cache entry is invalid (i.e., it is not a disk file) the whole entry is treated as if it were invalid, which forces an 
-       in-memory copy of the buffer. Also added test cases, using the new support committed in 236011."""
+use a regex instead of the hardcoded internal name. Test Plan: dotest.py -C -p TestMiVar Reviewers: ki.stfu Reviewed By: ki.stfu 
+Subscribers: lldb-commits Differential Revision: http://reviews.llvm.org/D9128 Make getModRefInfo(Instruction *) not crash on certain 
+types of instructions Use a range loop. NFC.  Use dl_iterate_phdr on Android. It's available on Android/ARM starting with API 21 (L).
+remove RCPPS and RSQRTPS intrinsic instruction definitions We don't need codegen-only intrinsic instructions for the vector forms of 
+these instructions. This makes the reciprocal estimate instruction lowering identical to how we handle normal square roots: 
+(V)SQRTPS / (V)SQRTPD. No existing regression tests fail with this patch. Differential Revision: http://reviews.llvm.org/D9301
+Implemented ASTImporter support for Stmts and fixed some bugs in the ASTImporter that this exposed: - When importing functions, the body 
+(if any) was previously ignored. This patch ensures that the body is imported also. - When a function-local Decl is imported, the first 
+thing the ASTImporter does is import its context (via ImportDeclParts()). This can trigger importing the Decl again as part of the body of 
+the function (but only once, since the function's Decl has been added to ImportedDecls). This patch fixes that problem by extending 
+ImportDeclParts() to return the imported Decl if it was imported as part of importing its context, and the patch adds 
+ASTImporter::GetAlreadyImportedOrNull() to support this query. All callers of ImportDeclParts return the imported version of 
+the Decl if ImportDeclParts() returns it. - When creating functions, InnerLocStart of the source function was re-used without importing. 
+This is a straight up bug, and this patch makes ASTImporter import the InnerLocStart and use the imported version. - 
+When importing FileIDs, the ASTImporter previously always tried to re-load the file for the corresponding CacheEntry from disk. 
+This doesn't work if the CacheEntry corresponds to a named memory buffer. This patch changes the code so that if the UniqueID for 
+the cache entry is invalid (i.e., it is not a disk file) the whole entry is treated as if it were invalid, which forces an 
+in-memory copy of the buffer. Also added test cases, using the new support committed in 236011."""
 
 
 
@@ -65,6 +65,10 @@ s = """Enable one of the tests for GCC. Summary: The "internal" name of vars is 
 r = topics("test title", s).json()
 #print r
 #{u'topics': [{u'topic': u'Android Development', u'score': 0.51725, u'id': 6840}, {u'topic': u'Programming', u'score': 0.51689, u'id': 3582}, {u'topic': u'Test Driven Development', u'score': 0.50312, u'id': 37705}]}
+
+print "text ..."
+print s
+print "interests ....."
 
 for topic in r['topics']:
     print topic['topic']
