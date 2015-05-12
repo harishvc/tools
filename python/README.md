@@ -62,6 +62,18 @@ else:
     b = {}
     print type(b)
 
+##Q10: Dictionary 
+vowels = {8: 'a', 3: 'e', 2: 'i', 9: 'o', 1:'u'}
+print  vowels.keys()               #print all keys
+print  vowels.values()             #print all values
+for k, v in vowels.iteritems():
+        print k, v                 #print keys and values
+vowels.pop(1)                      #remove key=1
+for k in vowels.iterkeys():
+        print k                    #print keys
+for v in vowels.itervalues(): 
+        print v                    #print values
+print max(vowels.keys(), key=int)  #print max key
 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
