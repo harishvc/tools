@@ -76,4 +76,8 @@ for v in vowels.itervalues():
 print max(vowels.keys(), key=int)  #print max key
 
 
+##Q10: Convert interger to binary (base 2)
+input = 6
+print bin(input)[2:]  #110
+
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
