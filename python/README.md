@@ -10,6 +10,9 @@
     * [Q6: One line if else statement](#q6-one-line-if-else-statement)
     * [Q7: Time now is epoch milliseconds](#q7-time-now-in-epoch-milliseconds)
     * [Q8: Find if substring exists in a string](#q8-find-if-substring-exists-in-a-string)
+    * [Q9: What is the data type?](#q9-What-is-the-data-type?)
+    * [Q10: Iterate Dictionary](#q10-Iterate-Dictionary)
+    * [Q11: Convert integer to binary (base 2)(#q11-convert-integer-to-binary-base)
 
 ##Q1: Join elements in an array
     a1 = ['this','is','a','sentence']      
@@ -62,7 +65,7 @@ else:
     b = {}
     print type(b)
 
-##Q10: Dictionary 
+##Q10: Iterate Dictionary 
 vowels = {8: 'a', 3: 'e', 2: 'i', 9: 'o', 1:'u'}
 print  vowels.keys()               #print all keys
 print  vowels.values()             #print all values
@@ -76,7 +79,7 @@ for v in vowels.itervalues():
 print max(vowels.keys(), key=int)  #print max key
 
 
-##Q10: Convert interger to binary (base 2)
+##Q11: Convert intrger to binary (base 2)
 input = 6
 print bin(input)[2:]  #110
 
