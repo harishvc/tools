@@ -9,6 +9,8 @@ Unix Command Line Tools
       * [Q5: Parse email address into generate custom output in CSV format](#q5-parse-email-address-into-generate-custom-output-in-csv-format)
       * [Q6: How to generate timestamp year-month-year hours:minutes:seconds (example: 2014-10-23 21:43:48)](#q6-how-to-generate-timestamp-year-month-year-hoursminutesseconds-example-2014-10-23-214348)
       * [Q7: How to replace all occurrence of a word in a file?](#q7-how-to-replace-all-occurrence-of-a-word-in-a-file)
+      * [Q8: How much space is my folder taking up?](#q8-how-much-space-is-my-folder-taking-up)
+      * [Q9: List all directories](#q9-list-all-directories)
       * [Resources](#resources)
 
 
