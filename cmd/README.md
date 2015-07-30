@@ -85,6 +85,10 @@ Unix Command Line Tools
 
         $> du -sk * | sort -rn     #sort by kilo bytes in descending order
 
+###Q9: List all directories
+     
+        $> ls -d */
+
 ###Resources
 1. [GitHub Markdown Viewer](http://notepag.es/)
 2. [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
