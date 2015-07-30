@@ -66,21 +66,66 @@ else:
     print type(b)
 
 ##Q10: Iterate Dictionary 
-vowels = {8: 'a', 3: 'e', 2: 'i', 9: 'o', 1:'u'}
-print  vowels.keys()               #print all keys
-print  vowels.values()             #print all values
-for k, v in vowels.iteritems():
-        print k, v                 #print keys and values
-vowels.pop(1)                      #remove key=1
-for k in vowels.iterkeys():
-        print k                    #print keys
-for v in vowels.itervalues(): 
-        print v                    #print values
-print max(vowels.keys(), key=int)  #print max key
+    vowels = {8: 'a', 3: 'e', 2: 'i', 9: 'o', 1:'u'}
+    print  vowels.keys()               #print all keys
+    print  vowels.values()             #print all values
+    
+    for k, v in vowels.iteritems():
+        print k, v                     #print keys and values
+    vowels.pop(1)                      #remove key=1
+
+    for k in vowels.iterkeys():
+        print k                        #print keys
+
+    for v in vowels.itervalues(): 
+        print v                        #print values
+
+    print max(vowels.keys(), key=int)  #print max key
 
 
-##Q11: Convert intrger to binary (base 2)
-input = 6
-print bin(input)[2:]  #110
+##Q11: Convert integer to binary (base 2)
+    input = 6
+    print bin(input)[2:]  #110
+
+
+##Q12: Iterate array of key,value pairs
+    people.append({"lastname":'a', "fullname":'a bc', "url": 'abcd'})
+    ...
+    #sort by last name
+    people.sort(key=lambda people_item: people_item['lastname'],reverse=False)	
+
+
+#Q13: Find all directories (not recursive) inside a folder
+    #Source: http://stackoverflow.com/questions/141291/how-to-list-only-top-level-directories-in-python
+    def listdirs(folder):
+       return [d for d in os.listdir(folder) if os.path.isdir(os.path.join(folder, d))]
+    
+#Q14: Given page URL, find the page title inside <title></title>
+    #Source: http://stackoverflow.com/questions/51233/how-can-i-retrieve-the-page-title-of-a-webpage-using-python
+
+    from BeautifulSoup import BeautifulSoup
+    from mechanize import Browser
+
+    def PageTitle(url):
+     try:
+        br = Browser()
+        res = br.open(url)
+        data = res.get_data()
+        soup = BeautifulSoup(data)
+        htmltitle = soup.find('title')
+        title = []
+        title = (htmltitle.renderContents()).split("|")
+        return title[0].rstrip()
+    except:
+        print "error trying to access", url
+        return ""
+
+
+#Q15: Open file and process line by line
+    with open(filename) as fp:
+        for line in fp:
+            print(line.rstrip())
+
+
 
 [![Analytics](https://ga-beacon.appspot.com/UA-55381661-1/tools/cmd/readme)](https://github.com/igrigorik/ga-beacon)
