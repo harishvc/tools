@@ -12,7 +12,7 @@
     * [Q8: Find if substring exists in a string](#q8-find-if-substring-exists-in-a-string)
     * [Q9: What is the data type?](#q9-What-is-the-data-type?)
     * [Q10: Iterate Dictionary](#q10-Iterate-Dictionary)
-    * [Q11: Convert integer to binary (base 2)(#q11-convert-integer-to-binary-base)
+    * [Q11: Convert integer to binary (base 2)](#q11-convert-integer-to-binary-base)
     * [Q12: Iterate array of key,value pairs](#q12-iterate-array-of-keyvalue-pairs)
     * [Q13: Find all directories (not recursive) inside a folder](#q13-find-all-directories-not-recursive-inside-a-folder)
     * [Q14: Given page URL, find the page title inside ](#q14-given-page-url-find-the-page-title-inside-)
