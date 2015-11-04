@@ -53,9 +53,28 @@
     else:
 	a = 0
 
-##Q7: Time now in epoch milliseconds
+##Q7:Time formatting
+    #Time now in epoch milliseconds
+    #Python 2.7.x
     import datetime
     print int(datetime.datetime.now().strftime("%s")) * 1000    
+
+    #Python 3.4.x
+    import time
+    print(int(time.time()) *1000)
+
+    #Convert time stamp to epoch
+    #Python 3.4.x
+    import datetime
+    import pytz
+    timestampZ = "2015-10-23T13:40:00-08:00"
+    tz_UTC = pytz.timezone('US/Pacific')
+    timestamp, _, zone= timestampZ.rpartition("-")
+    time_format = "%Y-%m-%dT%H:%M:%S"
+    naive_timestamp = datetime.datetime.strptime(timestamp, time_format)
+    aware_timestamp = tz_UTC.localize(naive_timestamp)
+    epoch = aware_timestamp.strftime("%s")
+    print(int(epoch))
 
 ##Q8: Find if substring exists in a string
     a = "Hello world" #string
@@ -99,12 +118,12 @@
     people.sort(key=lambda people_item: people_item['lastname'],reverse=False)	
 
 
-#Q13: Find all directories (not recursive) inside a folder
+##Q13: Find all directories (not recursive) inside a folder
     #Source: http://stackoverflow.com/questions/141291/how-to-list-only-top-level-directories-in-python
     def listdirs(folder):
        return [d for d in os.listdir(folder) if os.path.isdir(os.path.join(folder, d))]
     
-#Q14: Given page URL, find the page title inside <title></title>
+##Q14: Given page URL, find the page title inside <title></title>
     #Source: http://stackoverflow.com/questions/51233/how-can-i-retrieve-the-page-title-of-a-webpage-using-python
 
     from BeautifulSoup import BeautifulSoup
@@ -125,7 +144,7 @@
         return ""
 
 
-#Q15: Open file and process line by line
+##Q15: Open file and process line by line
     with open(filename) as fp:
         for line in fp:
             print(line.rstrip())
