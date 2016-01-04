@@ -1,6 +1,6 @@
 #AWK: Quick Reference
 
-#source: http://www.tutorialspoint.com/awk/awk_workflow.htm
+source: http://www.tutorialspoint.com/awk/
 
     $>cat marks.txt
     1)    Amit     Physics    80
@@ -29,8 +29,8 @@
     Hari
 
 #List names with letters `ar`
-  $>awk 'BEGIN{printf "Names\n-----\n"} /ar/ {print $2} ' marks.txt 
-  Names
-  -----
-  Kedar
-  Hari
+    $>awk 'BEGIN{printf "Names\n-----\n"} /ar/ {print $2} ' marks.txt 
+    Names
+    -----
+    Kedar
+    Hari
