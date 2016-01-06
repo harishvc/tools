@@ -59,10 +59,15 @@ source: http://www.tutorialspoint.com/awk/
 `nextfile` is a awk command to quit the current file and start working on a new file  
 File names are listed only once even when the pattern can occurs more than once       
 
+
     $>awk '/TODO/ {print FILENAME;nextfile}' ~/projects/*  
     ~/projects/1.py  
     ~/projects/5.py  
 
+    $>grep -nr "TODO" ~/projects/*
+    ~/projects/1.py  
+    ~/projects/5.py  
+  
 
 ##Additional Resources
 * [grep vs awk : 10 examples of pattern search](http://www.theunixschool.com/2012/09/grep-vs-awk-examples-for-pattern-search.html)
