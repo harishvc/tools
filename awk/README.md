@@ -54,14 +54,13 @@ source: http://www.tutorialspoint.com/awk/
     Kedar
     Hari
 
-##List all the files that contain the pattern `TODO` :notes:
-`FILENAME` which contains the name of the file which is currently being worked on. 
-`nextfile` is a awk command to quit the current file and start working on a new file
-File names are listed only once even when the pattern can occurs more than once 
-    $>awk '/TODO/ {print FILENAME;nextfile}' ~/projects/*
-    ~/projects/1.py
+##List all the files that contain the pattern `TODO` :notes:  
+`FILENAME` which contains the name of the file which is currently being worked on.   
+`nextfile` is a awk command to quit the current file and start working on a new file  
+File names are listed only once even when the pattern can occurs more than once       
+    $>awk '/TODO/ {print FILENAME;nextfile}' ~/projects/*  
+    ~/projects/1.py  
     ~/projects/5.py
-
 
 
 ##Additional Resources
