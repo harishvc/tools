@@ -58,9 +58,9 @@ source: http://www.tutorialspoint.com/awk/
 `FILENAME` which contains the name of the file which is currently being worked on.   
 `nextfile` is a awk command to quit the current file and start working on a new file  
 File names are listed only once even when the pattern can occurs more than once       
+`BEGIN{IGNORECASE=1}` ignore case       
 
-
-    $>awk '/TODO/ {print FILENAME;nextfile}' ~/projects/*  
+    $>awk 'BEGIN{IGNORECASE=1} /TODO/ {print FILENAME;nextfile}' ~/projects/*  
     ~/projects/1.py  
     ~/projects/5.py  
 
@@ -68,6 +68,17 @@ File names are listed only once even when the pattern can occurs more than once
     ~/projects/1.py  
     ~/projects/5.py  
   
+
+##List all the files that contain the pattern `TODO`  from a tar.gz archive
+//Several options at http://stackoverflow.com/questions/13983365/grep-from-tar-gz-without-extracting-faster-one
+    $>tar -zxvf projects.tar 
+    $>for file in ./projects/*
+        do
+        awk 'BEGIN{IGNORECASE=1} /TODO/ {print FILENAME;nextfile}' $file
+        done
+
+##Find file names that match a pattern
+
 
 ##Additional Resources
 * [grep vs awk : 10 examples of pattern search](http://www.theunixschool.com/2012/09/grep-vs-awk-examples-for-pattern-search.html)
